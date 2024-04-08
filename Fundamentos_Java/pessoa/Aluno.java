@@ -11,4 +11,9 @@ public class Aluno extends Pessoa{
     public void setMatricula(String matricula) {
         Matricula = matricula;
     }
+
+
+    String imprimirDadosDaPessoa(){
+        return "você é Aluno";
+    }
 }
