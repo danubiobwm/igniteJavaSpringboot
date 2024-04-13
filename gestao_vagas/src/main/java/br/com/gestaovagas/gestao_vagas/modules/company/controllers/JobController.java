@@ -26,6 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/company/job")
 public class JobController {
+
     @Autowired
     private CreateJobUseCase createJobUseCase;
 
@@ -56,4 +57,5 @@ public class JobController {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
+
 }
